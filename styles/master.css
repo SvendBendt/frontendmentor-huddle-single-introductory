@@ -8,16 +8,20 @@ body {
   background-image: url("../images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width:1440px;
   margin: 0 auto;
 }
 
+@media screen and (min-width:800px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    max-width:1440px;
+  }
+}
 
 
 header {}
 
 main {
-  width: 100vw;
 }
 
 .logo {
@@ -25,10 +29,7 @@ main {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .attention-headline {
