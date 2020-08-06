@@ -2,6 +2,10 @@ html{
   background-color: black;
 }
 
+p::first-line{
+  font-size:50px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: hsl(257, 40%, 49%);
