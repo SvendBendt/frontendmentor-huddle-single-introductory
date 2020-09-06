@@ -17,7 +17,7 @@ body {
   body {background-image: url("../images/bg-desktop.svg");max-width: 1440px;}}
 
 header {
-  padding: 38.2px 40px 39px 40px;
+  padding: 32.3px 40px 39px 35px;
 }
 
 main {
@@ -25,7 +25,7 @@ main {
 
 .logo {
   margin: 0 auto;
-  Width: 120px;
+  Width: 128px;
 }
 
 .container {
@@ -52,7 +52,7 @@ main {
 .content {
   /* flex:1 1 0; */
   text-align: center;
-  margin: 5% 20%;
+  margin: 5% 10%;
 }
 
 .register {}
