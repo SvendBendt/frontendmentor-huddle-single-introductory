@@ -6,7 +6,7 @@ html{
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: hsl(257, 40%, 49%);
-  background-image: url("../images/bg-mobile.svg");
+  /* background-image: url("../images/bg-mobile.svg"); */
   background-repeat: no-repeat;
   background-size: auto;
   width: 100%;
@@ -51,8 +51,13 @@ main {
 
 .content {
   /* flex:1 1 0; */
+  color:white;
+  font-size:1.6em;
+  font-family: 'poppins', sans-serif;
+  font-weight:400;
+  line-height: 1.2;
   text-align: center;
-  margin: 5% 10%;
+  padding: 6% 10%;
 }
 
 .register {}
