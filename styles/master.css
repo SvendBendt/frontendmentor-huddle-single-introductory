@@ -31,15 +31,17 @@ main {
 .attention-img {
   margin: 5% 10%;
   width: 80%;
-  margin-bottom: 2rem;
+  margin-bottom: 4.1rem;
 }
 .interest-headline {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size:2.4rem;
+  font-weight:700;
   line-height: 3.6rem;
   text-align:center;
-  padding: initial 10%;
+  padding: 0 10%;
+  margin-bottom:1.0rem;
 }
 
 .desire-text {
@@ -47,12 +49,19 @@ main {
   font-size:1.6rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: center;
-  padding: 6% 10%;
+  padding: 0 10%;
+  margin:0;
 }
 
-.action-button {}
+.action-button {
+  display:block;
+  width:20rem;
+  height:4rem;
+  margin: 8% auto;
+  border-radius:2.8rem;
+}
 
 .social-icon {
   box-sizing: border-box;
