@@ -41,7 +41,7 @@ main {
   line-height: 3.6rem;
   text-align:center;
   padding: 0 10%;
-  margin-bottom:1.0rem;
+  margin-bottom:1.2rem;
 }
 
 .desire-text {
@@ -52,29 +52,57 @@ main {
   line-height: 1.5;
   text-align: center;
   padding: 0 10%;
-  margin:0;
+  margin:0 auto 2.5rem;
 }
 
 .action-button {
   display:block;
+  font-family: 'Poppins', sans-serif;
+  font-size:1.2rem;
+  color:#684BB1;
+  border:none;
   width:20rem;
   height:4rem;
-  margin: 8% auto;
+  margin: 0 auto 6.3rem;
   border-radius:2.8rem;
 }
 
+.sicons{
+  height:3rem;
+  position:relative;
+  }
+
 .social-icon {
+  position:absolute;
   box-sizing: border-box;
   border: 1px solid white;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: white;
-  height: 30px;
-  width: 30px;
+  height: 2.8rem;
+  width: 2.8rem;
+  line-height:2.7rem;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  /* display: table-cell;*/
+  /* vertical-align: middle; */
 }
+
+
+.sipos1{
+left:50%;
+margin-left:-5.3rem;
+}
+
+.sipos2{
+left:50%;
+margin-left:-1.5rem;
+}
+
+.sipos3{
+left:50%;
+margin-left:2.4rem;
+}
+
 
 .attribution {
   font-size: 11px;
@@ -82,5 +110,5 @@ main {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
 }
