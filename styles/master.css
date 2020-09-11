@@ -15,7 +15,7 @@ body {
   body {background-image: url("../images/bg-desktop.svg");max-width: 1440px;}} */
 
 header {
-  padding: 32.3px 40px 39px 35px;
+  padding: 8.5% 9% 5%;
 }
 
 main {
@@ -32,6 +32,9 @@ main {
   width: 80%;
   margin-bottom: 4.1rem;
 }
+
+
+
 .interest-headline {
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -107,4 +110,25 @@ margin-left:2.4rem;
 
 .attribution a {
   color: hsl(0, 0%, 100%);
+}
+
+/*Queries for low-height screens */
+@media screen and (max-height:770px){
+  .action-button{margin-bottom:1rem;}
+}
+
+@media screen and (max-height:710px){
+  header{padding: 1% 9%;}
+  .attention-img{margin-bottom:0;}
+}
+
+@media screen and (max-height:590px){
+  header{padding: 1% 9% 0%;}
+  .interest-headline{margin:0.3rem 0}
+  .desire-text{margin-bottom:1rem}
+  .attention-img{margin-top:0;}
+}
+
+@media screen and (max-height:500px){
+  .desire-text{font-size:1.4rem;}
 }
