@@ -33,6 +33,22 @@ main {
   margin-bottom: 4.1rem;
 }
 
+  @media screen AND (min-width:800px){
+    .attention-img {
+      float:left;
+      margin:5% 5%;
+      width:40%;
+    }
+
+    .wraptainer{
+      float:right;
+      width:50%;
+    }
+
+    .sicons{
+      clear:both;
+    }
+  }
 
 
 .interest-headline {
