@@ -63,8 +63,11 @@ main {
     content: "";
     display: block;
     clear: both;
+    margin:100px;
   }
 }
+
+
 
 .image {
   margin: 5% 10%;
@@ -109,7 +112,7 @@ main {
   .headline{
     font-size:4rem;
     letter-spacing: 0.02rem;
-    margin:0;
+    margin:0 0 2rem 0;
     line-height:6rem;
     padding:0;
     text-align:left;
@@ -131,8 +134,10 @@ main {
 
 @media screen AND (min-width:800px){
   .text{
+    font-size:1.8rem;
 text-align:left;
 padding:0;
+margin: 0 9rem 2.3rem 0;
   }
 }
 
@@ -148,10 +153,21 @@ padding:0;
   border-radius: 2.8rem;
 }
 
-.sicons {
+@media screen AND (min-width:800px){ /*Sure creates a lot of extra lines*/
+  .action-button{
+    font-size:1.8rem;
+    height:5.6rem;
+    margin:0 0 18.3rem; /*hmm?? Should I use another div?*/
+  }
+}
+
+.sicons { /*positioned horisontally with .action-button bottom-margin*/
   height: 3rem;
   position: relative;
 }
+
+
+
 
 .social-icon {
   position: absolute;
@@ -164,6 +180,15 @@ padding:0;
   width: 2.8rem;
   line-height: 2.7rem; /*Convert to unitless*/
   text-align: center;
+}
+
+@media screen AND (min-width:800px){
+  .social-icon{
+  font-size:2.0rem;
+  line-height: 4.0rem;
+  height:4.0rem;
+  width:4.0rem;
+  }
 }
 
 .sipos1 {
@@ -181,6 +206,27 @@ padding:0;
   left: 50%;
   margin-left: 2.4rem;
 }
+
+@media screen AND (min-width:800px){
+  .sipos1 {
+    left:initial;
+    right: 19.4rem;
+    margin-left: initial;
+  }
+
+  .sipos2 {
+    left:initial;
+    right: 13.5rem;
+    margin-left: initial;
+  }
+
+  .sipos3 {
+    left:initial;
+    right: 8rem;
+    margin-left: initial;
+  }
+}
+
 
 .attribution {
   font-size: 11px;
