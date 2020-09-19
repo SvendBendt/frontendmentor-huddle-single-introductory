@@ -27,20 +27,9 @@ header {
   }
 }
 
-main {
-  }
-
 .logo {
   width: 12.8rem;
 }
-
-@media screen AND (min-width:800px) {
-  .logo{
-    /* width: initial; TODO hmm?? peculiar*/
-  }
-}
-
-
 
 @media screen AND (min-width:800px) {
   .logo {
@@ -49,25 +38,23 @@ main {
 }
 
 .bg-image-behave {
-  background:url("../images/bg-mobile.svg") no-repeat;
+  background: url("../images/bg-mobile.svg") no-repeat;
   background-size: contain;
   margin: 0;
 }
 
 @media screen and (min-width:800px) {
   .bg-image-behave {
-      background:url("../images/bg-desktop.svg") no-repeat;
+    background: url("../images/bg-desktop.svg") no-repeat;
   }
 
   .bg-image-behave::after {
     content: "";
     display: block;
     clear: both;
-    margin:100px;
+    margin: 100px;
   }
 }
-
-
 
 .image {
   margin: 5% 10%;
@@ -78,24 +65,24 @@ main {
 @media screen AND (min-width:800px) {
   .image {
     float: left;
-    padding: 7.2rem 0 0 7.2rem ;
+    padding: 7.2rem 0 0 7.2rem;
     width: 71rem;
-    margin:0; /*Clean up, remove this*/
+    margin: 0;
+    /*Clean up, remove this*/
   }
 }
 
-@media screen AND (min-width:800px){
+@media screen AND (min-width:800px) {
   .wraptainer {
     float: right;
     width: 60.5rem;
-    padding-top:11.6rem;
+    padding-top: 11.6rem;
   }
 }
 
-  .sicons {
-    clear: both;
-  }
-
+.sicons {
+  clear: both;
+}
 
 .headline {
   color: white;
@@ -108,18 +95,16 @@ main {
   margin-bottom: 1.2rem;
 }
 
-@media screen AND (min-width:800px){
-  .headline{
-    font-size:4rem;
+@media screen AND (min-width:800px) {
+  .headline {
+    font-size: 4rem;
     letter-spacing: 0.02rem;
-    margin:0 0 2rem 0;
-    line-height:6rem;
-    padding:0;
-    text-align:left;
-
+    margin: 0 0 2rem 0;
+    line-height: 6rem;
+    padding: 0;
+    text-align: left;
   }
 }
-
 
 .text {
   color: white;
@@ -132,12 +117,12 @@ main {
   margin: 0 auto 2.5rem;
 }
 
-@media screen AND (min-width:800px){
-  .text{
-    font-size:1.8rem;
-text-align:left;
-padding:0;
-margin: 0 9rem 2.3rem 0;
+@media screen AND (min-width:800px) {
+  .text {
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0;
+    margin: 0 9rem 2.3rem 0;
   }
 }
 
@@ -153,11 +138,12 @@ margin: 0 9rem 2.3rem 0;
   border-radius: 2.8rem;
 }
 
-@media screen AND (min-width:800px){ /*Sure creates a lot of extra lines*/
-  .action-button{
-    font-size:1.8rem;
-    height:5.6rem;
-    margin:0 0 18.3rem; /*hmm?? Should I use another div?*/
+@media screen AND (min-width:800px) { /*Sure creates a lot of extra lines*/
+  .action-button {
+    font-size: 1.8rem;
+    height: 5.6rem;
+    margin: 0 0 18.3rem;
+    /*hmm?? Should I use another div?*/
   }
 }
 
@@ -165,9 +151,6 @@ margin: 0 9rem 2.3rem 0;
   height: 3rem;
   position: relative;
 }
-
-
-
 
 .social-icon {
   position: absolute;
@@ -178,55 +161,54 @@ margin: 0 9rem 2.3rem 0;
   color: white;
   height: 2.8rem;
   width: 2.8rem;
-  line-height: 2.7rem; /*Convert to unitless*/
+  line-height: 2.7rem;
+  /*Convert to unitless*/
   text-align: center;
 }
 
-@media screen AND (min-width:800px){
-  .social-icon{
-  font-size:2.0rem;
-  line-height: 4.0rem;
-  height:4.0rem;
-  width:4.0rem;
+@media screen AND (min-width:800px) {
+  .social-icon {
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+    height: 4.0rem;
+    width: 4.0rem;
   }
 }
 
-.sipos1 {
-  /*Social icons positioned using positions - just because it's possible*/
+.fb-pos {
   left: 50%;
   margin-left: -5.3rem;
 }
 
-.sipos2 {
+.twi-pos {
   left: 50%;
   margin-left: -1.5rem;
 }
 
-.sipos3 {
+.ig-pos {
   left: 50%;
   margin-left: 2.4rem;
 }
 
-@media screen AND (min-width:800px){
-  .sipos1 {
-    left:initial;
+@media screen AND (min-width:800px) {
+  .fb-pos {
+    left: initial;
     right: 19.4rem;
     margin-left: initial;
   }
 
-  .sipos2 {
-    left:initial;
+  .twi-pos {
+    left: initial;
     right: 13.5rem;
     margin-left: initial;
   }
 
-  .sipos3 {
-    left:initial;
+  .ig-pos {
+    left: initial;
     right: 8rem;
     margin-left: initial;
   }
 }
-
 
 .attribution {
   font-size: 11px;
