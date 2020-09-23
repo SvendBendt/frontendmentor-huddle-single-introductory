@@ -45,7 +45,8 @@ header {
 
 @media screen and (orientation:landscape) {
   .bg-image-behave {
-    background: url("../images/bg-desktop.svg") no-repeat;
+    /* background: url("../images/bg-desktop.svg") no-repeat; */
+    background: grey;
   }
 
   .bg-image-behave::after {
@@ -57,32 +58,31 @@ header {
 }
 
 .image {
+  box-sizing:border-box;
   margin: 5% 10%;
   width: 80%;
   margin-bottom: 4.1rem;
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape){
   .image {
     float: left;
     padding: 7.2rem 0 0 7.2rem;
-    width: 71rem;
+    width: 54.3%;
+    /* width: 78.2rem; */
     margin: 0;
   }
 }
 
-
-@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape){
   .wraptainer {
     float: right;
-    width: 60.5rem;
+    width: 42%;
+    /* width: 60.5rem; */
     padding-top: 11.6rem;
   }
 }
 
-.sicons {
-  clear: both;
-}
 
 .headline {
   color: white;
@@ -142,12 +142,13 @@ header {
   .action-button {
     font-size: 1.8rem;
     height: 5.6rem;
-    margin: 0 0 18.3rem;
-    /*hmm?? Should I use another div?*/
+    margin: 0;
+    margin-bottom: 18.3rem; /* Positions .social-icon_container */
   }
 }
 
-.sicons { /*positioned horisontally with .action-button bottom-margin*/
+.social-icon_container {
+  clear: both;
   height: 3rem;
   position: relative;
 }
@@ -226,7 +227,7 @@ header {
 
 
 
-/*Queries for low-height screens, ignore these, it's just me playing around */
+/*Queries to keep primary content visible on low-height screens */
 @media screen and (max-height:770px) {
   .action-button {
     margin-bottom: 1rem;
