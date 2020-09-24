@@ -45,11 +45,10 @@ header {
 
 @media screen and (orientation:landscape) {
   .bg-image-behave {
-    /* background: url("../images/bg-desktop.svg") no-repeat; */
-    background: grey;
+    background: url("../images/bg-desktop.svg") no-repeat;
   }
 
-  .bg-image-behave::after {
+  .bg-image-behave::after { /*Only for landscape since portrait doesn't use float*/
     content: "";
     display: block;
     clear: both;
@@ -59,17 +58,15 @@ header {
 
 .image {
   box-sizing:border-box;
-  margin: 5% 10%;
   width: 80%;
-  margin-bottom: 4.1rem;
+  margin: 5% 10% 4.1rem 10%;
 }
 
 @media screen and (orientation:landscape){
   .image {
     float: left;
-    padding: 7.2rem 0 0 7.2rem;
     width: 54.3%;
-    /* width: 78.2rem; */
+    padding: 7.2rem 0 0 7.2rem;
     margin: 0;
   }
 }
@@ -78,14 +75,12 @@ header {
   .wraptainer {
     float: right;
     width: 42%;
-    /* width: 60.5rem; */
     padding-top: 11.6rem;
   }
 }
 
-
 .headline {
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-family: 'Poppins', sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
@@ -99,17 +94,17 @@ header {
   .headline {
     font-size: 4rem;
     letter-spacing: 0.02rem;
-    margin: 0 0 2rem 0;
     line-height: 6rem;
-    padding: 0;
     text-align: left;
+    padding: 0;
+    margin: 0 0 2rem 0;
   }
 }
 
 .text {
-  color: white;
-  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.5;
   text-align: center;
@@ -138,41 +133,40 @@ header {
   border-radius: 2.8rem;
 }
 
-@media screen and (orientation:landscape) { /*Sure creates a lot of extra lines*/
+@media screen and (orientation:landscape) {
   .action-button {
     font-size: 1.8rem;
     height: 5.6rem;
     margin: 0;
-    margin-bottom: 18.3rem; /* Positions .social-icon_container */
+    margin-bottom: 18.3rem;
   }
 }
 
-.social-icon_container {
+.social-icon_container { /* Positioned by .action-button margin-bottom value */
   clear: both;
-  height: 3rem;
   position: relative;
+  height: 3rem;
 }
 
 .social-icon {
   position: absolute;
   box-sizing: border-box;
-  border: 1px solid white;
-  border-radius: 50%;
   font-size: 1.2rem;
-  color: white;
+  line-height: 2.2;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
   height: 2.8rem;
   width: 2.8rem;
-  line-height: 2.7rem;
-  /*Convert to unitless*/
   text-align: center;
 }
 
 @media screen and (orientation:landscape) {
   .social-icon {
-    font-size: 2.0rem;
-    line-height: 4.0rem;
-    height: 4.0rem;
-    width: 4.0rem;
+    font-size: 2rem;
+    line-height: 2;
+    height: 4rem;
+    width: 4rem;
   }
 }
 
@@ -213,19 +207,20 @@ header {
 
 .attribution {
   font-size: 11px;
+  color: hsl(0, 0%, 100%);
   text-align: center;
+  margin:2.5rem;
+}
+
+@media screen and (orientation:landscape){
+  .attribution{
+    margin:initial;
+  }
 }
 
 .attribution a {
   color: hsl(0, 0%, 100%);
 }
-
-
-
-
-
-
-
 
 /*Queries to keep primary content visible on low-height screens */
 @media screen and (max-height:770px) {
