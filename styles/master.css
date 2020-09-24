@@ -33,7 +33,7 @@ header {
 
 @media screen and (orientation:landscape) {
   .logo {
-    width: 21rem;
+    width: 21.5rem;
   }
 }
 
@@ -75,7 +75,7 @@ header {
   .wraptainer {
     float: right;
     width: 42%;
-    padding-top: 11.6rem;
+    padding-top: 11.5rem;
   }
 }
 
@@ -117,16 +117,18 @@ header {
     font-size: 1.8rem;
     text-align: left;
     padding: 0;
-    margin: 0 9rem 2.3rem 0;
+    margin: 0 8rem 2.2rem 0;
   }
 }
 
-.action-button {
+.button {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   color: #684BB1;
+  background-color: hsl(0, 0%, 100%);
   border: none;
+  box-shadow: 2px 4px 9px 3px hsla(0, 0%, 0%, 0.26);
   width: 20rem;
   height: 4rem;
   margin: 0 auto 6.3rem;
@@ -134,7 +136,7 @@ header {
 }
 
 @media screen and (orientation:landscape) {
-  .action-button {
+  .button {
     font-size: 1.8rem;
     height: 5.6rem;
     margin: 0;
@@ -142,7 +144,7 @@ header {
   }
 }
 
-.social-icon_container { /* Positioned by .action-button margin-bottom value */
+.social-icon_container { /* Positioned by .button margin-bottom value */
   clear: both;
   position: relative;
   height: 3rem;
@@ -186,15 +188,20 @@ header {
 }
 
 @media screen and (orientation:landscape) {
+  .fa-twitter{
+    font-size: 1.7rem;
+    line-height: 2.3;
+  }
+
   .fb-pos {
     left: initial;
-    right: 19.4rem;
+    right: 19.2rem;
     margin-left: initial;
   }
 
   .twi-pos {
     left: initial;
-    right: 13.5rem;
+    right: 13.6rem;
     margin-left: initial;
   }
 
@@ -224,7 +231,7 @@ header {
 
 /*Queries to keep primary content visible on low-height screens */
 @media screen and (max-height:770px) {
-  .action-button {
+  .button {
     margin-bottom: 1rem;
   }
 }
